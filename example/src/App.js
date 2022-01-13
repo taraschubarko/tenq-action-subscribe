@@ -15,7 +15,8 @@ const App = () => {
     <TenqActionSubscribe
       provider={'vkontakte'}
       label={'Участвовать c VK'}
-      host={host} token={token}
+      host={host}
+      token={token}
       promo_id={3}
       onSubscribe={subs}
     />

@@ -78,8 +78,8 @@ TenqActionSubscribe.propTypes = {
   className: PropTypes.string,
   host: PropTypes.string,
   token: PropTypes.string,
-  promo_id: PropTypes.numeric,
-  onSubscribe: PropTypes.function
+  promo_id: PropTypes.number,
+  onSubscribe: PropTypes.func
 };
 
 TenqActionSubscribe.defaultProps = {
