@@ -55,6 +55,7 @@ class TenqActionSubscribe extends React.Component {
       }
     }).then(response => {
         this.props.onSubscribe(response);
+        localStorage.removeItem('socKey');
     })
   }
 
