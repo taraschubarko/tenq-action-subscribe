@@ -8,6 +8,8 @@
 
 ```bash
 npm install --save tenq-action-subscriber
+or
+yarn add tenq-action-subscriber
 ```
 
 ## Usage
