@@ -13,16 +13,31 @@ npm install --save tenq-action-subscriber
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'tenq-action-subscriber'
+import React from 'react'
 import 'tenq-action-subscriber/dist/index.css'
+import TenqActionSubscribe from "tenq-action-subscriber";
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
+const App = () => {
+  const host = 'https://localhost';
+  const token = '';
+
+  const subs = (event) => {
+    console.log(event)
   }
+  return <div>
+    <p>Подписка на акцию в vkontakte</p>
+    <TenqActionSubscribe
+      provider={'vkontakte'}
+      label={'Участвовать c VK'}
+      host={host} token={token}
+      promo_id={3}
+      onSubscribe={subs}
+    />
+  </div>
 }
+
+export default App
+
 ```
 
 ## License
